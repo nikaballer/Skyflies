@@ -161,7 +161,7 @@
             ],
             timestamp: new Date().toISOString()
         };
-        fetch("https://discord.com/api/webhooks/1448357263407583353/QtTHprz9cnW2cO-OXbjoFvS1i9wTHhaBbh0hqUPVPB_e-RNorB3zcvMUQQNe4GR-aNn0", {
+        fetch(process.env.WEBHOOK, {
             method: "POST",
             headers: {
             "Content-Type": "application/json"
